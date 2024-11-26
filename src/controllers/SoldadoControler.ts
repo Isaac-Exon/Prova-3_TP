@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Soldado } from "../models";
+import Soldado from "../models/soldado";
 
 class SoldadoController {
   // Criar Soldado

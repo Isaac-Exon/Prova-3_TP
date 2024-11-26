@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Militar } from "../models";
+import Militar from "../models/militar";
 
 class MilitarController {
   // Criar Militar

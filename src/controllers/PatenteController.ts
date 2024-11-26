@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Patente } from "../models";
+import Patente from "../models/patente";
 
 class PatenteController {
   // Criar Patente
