@@ -62,3 +62,5 @@ Delete
 {
 "id": "645fca7b78e6a72d5c99a123"
 }
+
+modelo do professor deve ser MilitarModel
