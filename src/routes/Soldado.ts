@@ -1,12 +1,12 @@
 import { Router } from "express";
-import { soldadoController } from "../controllers/SoldadoControler";
+import { soldadoController } from "../controllers/SoldadoController";
 
 const router = Router();
 
 // Rotas para Soldado
-router.post("/", soldadoController.create); // Criar Soldado
-router.get("/", soldadoController.list); // Listar Soldados
-router.delete("/", soldadoController.delete); // Deletar Soldado
-router.put("/", soldadoController.update); // Atualizar Soldado
+router.post("/", soldadoController.create);
+router.get("/", soldadoController.list);
+router.delete("/", soldadoController.delete);
+router.put("/", soldadoController.update);
 
 export default router;

@@ -4,9 +4,9 @@ import { patenteController } from "../controllers/PatenteController";
 const router = Router();
 
 // Rotas para Patente
-router.post("/", patenteController.create); // Criar Patente
-router.get("/", patenteController.list); // Listar Patentes
-router.delete("/", patenteController.delete); // Deletar Patente
-router.put("/", patenteController.update); // Atualizar Patente
+router.post("/", patenteController.create);
+router.get("/", patenteController.list);
+router.delete("/", patenteController.delete);
+router.put("/", patenteController.update);
 
 export default router;

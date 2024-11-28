@@ -11,7 +11,7 @@ const MilitarSchema = new Schema(
     },
     idade: {
       type: Number,
-      max: [999, "A idade não pode ser maior que 999"], // Máximo 3 dígitos
+      max: [999, "A idade não pode ser maior que 999"],
       required: [true, "A idade é obrigatória"],
     },
     email: {
@@ -33,7 +33,7 @@ const MilitarSchema = new Schema(
       maxlength: [11, "O número de telefone deve ter no máximo 11 caracteres"],
       validate: {
         validator: function (value: string) {
-          const regex = /^[0-9]{10,11}$/; // Apenas números
+          const regex = /^[0-9]{10,11}$/;
           return regex.test(value);
         },
         message: (props: any) =>
@@ -63,7 +63,7 @@ const SoldadoSchema = new Schema(
       required: true,
       validate: {
         validator: async function (id: string) {
-          const militar = await Militar.findById(id); // Verifica se o ID existe na coleção Militar
+          const militar = await Militar.findById(id);
           return !!militar;
         },
         message: "O Militar fornecido não existe!",
